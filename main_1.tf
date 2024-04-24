@@ -110,14 +110,3 @@ Name  = "Lokesh"
 }
 }
 
-resource "aws_instance" "instance1" {
-ami           = "ami-0684f3b195c7387ad"
-instance_type = "t3.micro"
-subnet_id     = aws_subnet.lokesh-sub2.id
-count         = 2
-tags  = {
-Name  = "patnam"
-}
-}
-
-
